@@ -108,7 +108,9 @@ public class Infracao implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		Infracao other = (Infracao) obj;
-		return Objects.equals(id, other.id);
+		return Objects.equals(descricao, other.descricao) && Objects.equals(id, other.id)
+				&& Objects.equals(multas, other.multas) && pontos == other.pontos
+				&& Float.floatToIntBits(valor) == Float.floatToIntBits(other.valor);
 	}
 
 
