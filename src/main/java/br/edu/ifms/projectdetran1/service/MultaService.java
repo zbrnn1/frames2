@@ -53,7 +53,7 @@ public class MultaService {
 	}
 	
 	public Multa fromDto(MultaDto multaDto) {
-		return new Multa(multaDto.getId(),multaDto.getCidade(),multaDto.getAno());
+		return new Multa(multaDto.getId(),multaDto.getCidade(),multaDto.getAno(),null,null);
 		
 	}
 
